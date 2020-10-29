@@ -11,10 +11,11 @@ import java.util.Random;
  */
 public class HashMapSourceCode {
     public static void main(String[] args) {
-        HashMap<String, String> map = new HashMap<>();
+        HashMap<Integer, String> map = new HashMap<>();
         Random random = new Random();
         for (int i = 0; i < 20; i++) {
-            map.put(i + "", random.nextInt(1000) + "");
+            String r = random.nextInt(1000) + "";
+            map.put(i, r);
         }
         System.out.println(map);
     }
