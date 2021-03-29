@@ -1,7 +1,6 @@
 package concurrency;
 
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author xiayu001

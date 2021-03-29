@@ -3,9 +3,7 @@ package concurrency;
 import basic.CatalogResult;
 
 import java.util.concurrent.Callable;
-import java.util.concurrent.CompletionService;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
 
 /**
  * @author xy

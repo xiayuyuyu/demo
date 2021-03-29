@@ -1,6 +1,5 @@
 package concurrency.executor;
 
-import ch.qos.logback.core.util.InterruptUtil;
 import com.google.common.util.concurrent.Uninterruptibles;
 
 import java.util.concurrent.ArrayBlockingQueue;
