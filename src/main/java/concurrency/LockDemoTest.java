@@ -27,8 +27,11 @@ public class LockDemoTest implements Runnable{
         LockDemo demo = new LockDemo();
         Thread t1 = new Thread(new LockDemoTest(demo));
         Thread t2 = new Thread(new LockDemoTest(demo));
+        Thread t3 = new Thread(new LockDemoTest(demo));
         t1.start();
         t2.start();
+
+        t3.start();
 //        ExecutorService service = Executors.newFixedThreadPool(5);
 //        for (int i = 0; i < 10; i++) {
 //            service.execute(new LockDemoTest(demo));
