@@ -9,11 +9,11 @@ import java.util.concurrent.Executors;
  * @description
  * @date 2021/4/22 上午1:00
  */
-public class FixedThreadPoolTest {
+public class CachedThreadPoolTest {
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        ExecutorService executorService = Executors.newCachedThreadPool();
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 500; i++) {
             executorService.submit(new MyTask());
         }
 
@@ -26,6 +26,11 @@ public class FixedThreadPoolTest {
         @Override
         public void run() {
             System.out.println("current thread is running :" + Thread.currentThread());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+
+            }
         }
     }
 }
