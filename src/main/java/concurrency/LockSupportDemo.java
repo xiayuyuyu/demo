@@ -30,6 +30,9 @@ public class LockSupportDemo {
     }
 
     public static void main(String[] args) throws InterruptedException {
+        //park 为阻塞,继续执行的条件有2个
+        //1. 调用线程的interrupted方法
+        //2. unpark 那个线程
         t1.start();
         Thread.sleep(1000L);
         t2.start();
