@@ -20,7 +20,6 @@ public class NewTask {
         channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
 
         String message = getMessage();
-
         channel.basicPublish(
                 "",
                 TASK_QUEUE_NAME,
