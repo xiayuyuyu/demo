@@ -28,6 +28,7 @@
     </build>
     <modules>
         <module>rabbitmq-demo</module>
+        <module>redis-demo</module>
     </modules>
     
     <properties>
